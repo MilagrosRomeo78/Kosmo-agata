@@ -11,6 +11,45 @@
   --color-quin: #f3ccf1;
   --text-main: #f7efef;
   --text-sec: #1f001d;
+  --color-sex: #e1ba5e;
+  /* 1. Deep Space — azul profundo + púrpura */
+  --dark-gradient-1: linear-gradient(135deg, #0f1724 0%, #0b1220 30%, #2b0f3a 100%);
+
+  /* 2. Night Aurora — verde azulado con brillo sutil */
+  --dark-gradient-2: radial-gradient(1200px 600px at 10% 20%, rgba(56, 189, 248, 0.12), transparent 15%),
+    linear-gradient(180deg, #020617 0%, #071028 100%);
+
+  /* 3. Ember Void — negro + rojo apagado (drama) */
+  --dark-gradient-3: linear-gradient(135deg, #020204 0%, #0d0203 40%, #4b0f13 100%);
+
+  /* 4. Metalic Slate — gris azulado, elegante */
+  --dark-gradient-4: linear-gradient(180deg, #0b0f14 0%, #12171b 40%, #1f2a33 100%);
+
+  /* 5. Purple Haze — morado intenso con punto luminoso */
+  --dark-gradient-5: radial-gradient(600px 300px at 80% 10%, rgba(186, 85, 255, 0.06), transparent 20%),
+    linear-gradient(180deg, #07020b 0%, #1a0026 100%);
+
+  /* 6. Teal Drift — teal profundo */
+  --dark-gradient-6: linear-gradient(160deg, #001218 0%, #002a31 60%, #003a3f 100%);
+
+  /* 7. Cosmic Dust — azul + toques magenta muy sutiles */
+  --dark-gradient-7: linear-gradient(120deg, #040617 0%, #07203a 50%, #2b1333 100%);
+
+  /* 8. Graphite — monocromo con contraste suave */
+  --dark-gradient-8: linear-gradient(180deg, #0a0a0a 0%, #121212 60%, #1c1c1c 100%);
+
+  /* 9. Ink & Cyan — cian neón sobre negro con brillo */
+  --dark-gradient-9: radial-gradient(800px 400px at 10% 80%, rgba(34, 211, 238, 0.06), transparent 12%),
+    linear-gradient(180deg, #000205 0%, #00121a 100%);
+
+  /* 10. LavaGlass — elegante con punto cálido */
+  --dark-gradient-10: linear-gradient(135deg, #05060a 0%, #0b0d12 55%, #24100b 100%);
+
+  /* 11. Frosted Night — azul frío + brillo blanco muy suave */
+  --dark-gradient-11: linear-gradient(180deg, #021122 0%, #071828 40%, #0b2633 100%);
+
+  /* 12. Violet Neon — morado vibrante y oscuro */
+  --dark-gradient-12: linear-gradient(135deg, #08020b 0%, #1b0030 40%, #3a0060 100%);
 }
 /*============= reset =============*/
 * {
@@ -27,16 +66,17 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem 0;
+  padding: 16px 0;
+  align-items: center;
 }
 
 header h4 {
   font-family: var(--font-ter);
-  color: var(--text-main);
-  font-size: 1.5rem;
+  color: var(--color-sex);
+  font-size: 1.6rem;
   text-transform: capitalize;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 header img {
@@ -48,6 +88,7 @@ header img {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+  gap: 35px;
 }
 nav {
   width: 80%;
@@ -70,21 +111,71 @@ li {
 
 .button-main {
   text-transform: capitalize;
-  background-color: var(--color-sec);
-  color: var(--text-main);
-  border: none;
-  padding: 10px;
-  border-radius: 18px;
+  background-color: var(--color-sex);
+  color: var(--color-main);
+  border: 2px solid var(--color-sex);
+  padding: 12px 32px;
+  border-radius: 32px;
   font-size: 1.4rem;
+  transition: 0.5s ease-in-out all;
 }
 .button-main:hover{
   cursor: pointer;
-  border: 2px;
+background-color: transparent;
+color: var(--text-main);
 }
 
 /*============= SECTION HERO =============*/
 .hero {
-  background: linear-gradient(
+ /* background: linear-gradient(
+        to bottom,
+        rgba(1, 1, 1, 0.8) 10%,
+        rgba(1, 1, 1, 0.4) 20%,
+        rgba(1, 1, 1, 0.8) 100%
+      )
+      0% 0% / cover fixed,
+    url(../assets/capa\ estrellas.png); */
+  
+    background: var(--dark-gradient-5);
+    opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.hero img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  width: 400px;
+}
+.title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title p {
+  color: var(--color-quin);
+    font-size: 6rem;
+    font-family: var(--font-ter);
+    z-index: 1;
+    text-transform: capitalize;
+}
+.title .der{
+   margin-left: -124px;
+}
+.title .izq{
+  margin-right: -124px;
+}
+/*.hero {
+background: linear-gradient(
         to bottom,
         rgba(1, 1, 1, 0.8) 10%,
         rgba(1, 1, 1, 0.4) 20%,
@@ -108,7 +199,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.6;
   width: 350px;
 }
 .title{
@@ -117,15 +208,15 @@ li {
   align-items: center;
 }
 
-.title h1 {
-  font-family: var(--font-ter);
-  text-transform: capitalize;
+.title p {
   color: var(--color-quin);
-  font-size: 90px;
-  font-weight: 300;
-  margin-top: 90px;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  gap: 25px;
+    font-size: 4rem;
+    font-family: var(--font-ter);
+    z-index: 1;
 }
+.title .der{
+   margin-left: -66px;
+}
+.title .izq{
+  margin-right: -66px;
+}*/
