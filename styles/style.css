@@ -88,7 +88,7 @@ header img {
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  gap: 35px;
+  gap: 80px;
 }
 nav {
   width: 80%;
@@ -117,7 +117,7 @@ li {
   padding: 12px 32px;
   border-radius: 32px;
   font-size: 1.4rem;
-  transition: 0.5s ease-in-out all;
+  transition: 0.4s ease-in-out all;
 }
 .button-main:hover{
   cursor: pointer;
@@ -148,6 +148,13 @@ color: var(--text-main);
   flex-direction: column;
   row-gap: 10px;
 }
+
+.contenedor-hero{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
 .hero img{
   display: flex;
   justify-content: center;
@@ -169,10 +176,19 @@ color: var(--text-main);
     text-transform: capitalize;
 }
 .title .der{
-   margin-left: -124px;
+   margin-left: -94px;
 }
 .title .izq{
-  margin-right: -124px;
+  margin-right: -135px;
+}
+.contenedor-hero h3{
+      color: var(--color-quin);
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.button-hero{
+  display: flex;
+  gap:45px;
 }
 /*.hero {
 background: linear-gradient(
