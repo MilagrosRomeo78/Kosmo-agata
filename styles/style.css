@@ -51,6 +51,7 @@
   /* 12. Violet Neon — morado vibrante y oscuro */
   --dark-gradient-12: linear-gradient(135deg, #08020b 0%, #1b0030 40%, #3a0060 100%);
 }
+
 /*============= reset =============*/
 * {
   margin: 0;
@@ -58,6 +59,7 @@
 }
 body {
   font-family: var(--font-sec);
+  background: var(--dark-gradient-12);
 }
 
 /*============= SECTION HEADER =============*/
@@ -136,7 +138,7 @@ color: var(--text-main);
       0% 0% / cover fixed,
     url(../assets/capa\ estrellas.png); */
   
-    background: var(--dark-gradient-5);
+    /*background: var(--dark-gradient-12);*/
     opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,6 +192,21 @@ align-items: center;
   display: flex;
   gap:45px;
 }
+.button-main1{
+  text-transform: capitalize;
+  background-color: var(--color-sex);
+  color: var(--color-main);
+  border: 2px solid var(--color-sex);
+  padding: 12px 59px;
+  border-radius: 32px;
+  font-size: 1.4rem;
+  transition: 0.4s ease-in-out all; 
+}
+.button-main1:hover{
+  cursor: pointer;
+  background-color: transparent;
+color: var(--text-main);
+}
 /*.hero {
 background: linear-gradient(
         to bottom,
@@ -236,3 +253,38 @@ background: linear-gradient(
 .title .izq{
   margin-right: -66px;
 }*/
+/*============= SECTION servicios =============*/
+.contenedor-servicios{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-bordes{
+  height: 400px;
+    width: 300px;
+}
+.contenedor-title-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.title-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-main);
+}
+.card-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.card-center img{
+  height: 400px;
+    width: 300px;
+  }
