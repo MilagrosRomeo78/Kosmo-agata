@@ -63,13 +63,23 @@ body {
 }
 
 /*============= SECTION HEADER =============*/
-header {
+.header {
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 16px 0;
   align-items: center;
+  z-index: 10;
+  background: rgba(34,34,34,0.25);
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active {
+  background-color: rgba(34,34,34,0.8);
 }
 
 header h4 {
