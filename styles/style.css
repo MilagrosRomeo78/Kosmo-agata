@@ -71,18 +71,16 @@ body {
   padding: 16px 0;
   align-items: center;
   z-index: 10;
-  background: rgba(34,34,34,0.25);
+  background: rgba(34, 34, 34, 0);
 	-webkit-transition: all ease-out .5s;
-  -moz-transition: all ease-out .5s;
-  -o-transition: all ease-out .5s;
   transition: all ease-out .5s;
 }
 
 .active {
-  background-color: rgba(34,34,34,0.8);
+  background-color: var(--text-sec);
 }
 
-header h4 {
+.header h4 {
   font-family: var(--font-ter);
   color: var(--color-sex);
   font-size: 1.6rem;
@@ -91,7 +89,7 @@ header h4 {
   font-weight: 600;
 }
 
-header img {
+.header img {
   width: 200px;
   height: 100px;
 }
@@ -197,6 +195,7 @@ align-items: center;
       color: var(--color-quin);
     font-size: 1.7rem;
     font-weight: 300;
+    text-transform: capitalize;
 }
 .button-hero{
   display: flex;
@@ -265,14 +264,16 @@ background: linear-gradient(
 }*/
 /*============= SECTION servicios =============*/
 .contenedor-servicios{
-  width:100%;
+  width:90%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  padding: 0 80px 50px 80px;
+  gap: 30px;
 }
 .card-bordes{
-  height: 400px;
-    width: 300px;
+  height: 317px;
+    width: 261px;
+    border-radius: 40px;
 }
 .contenedor-title-cards{
   display: flex;
@@ -280,6 +281,7 @@ background: linear-gradient(
   justify-content: center;
   align-items: center;
   gap: 15px;
+  width: 37%;
 }
 
 .title-info{
@@ -287,6 +289,17 @@ background: linear-gradient(
   flex-direction: column;
   align-items: center;
   color: var(--text-main);
+  justify-content: center;
+}
+.title-info h2{
+  font-size: 50px;
+  font-family: var(--font-ter);
+  text-transform: capitalize;
+}
+.title-info h4{
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 .card-center{
   display: flex;
@@ -295,6 +308,7 @@ background: linear-gradient(
   gap: 30px;
 }
 .card-center img{
-  height: 400px;
-    width: 300px;
+  height: 317px;
+    width: 261px;
+    border-radius: 40px;
   }
