@@ -279,9 +279,9 @@ background: linear-gradient(
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 15px;
-  width: 37%;
+  width: 50%;
+  text-align: center;
 }
 
 .title-info{
@@ -309,12 +309,12 @@ background: linear-gradient(
 }
 .card-center img{
   height: 317px;
-    width: 261px;
+    width: 50%;
     border-radius: 40px;
   }
   .card-bordes-iz {
   height: 317px;
-    width: 261px;
+    width: 25%;
     border-radius: 40px;
   background-size: cover;/*sólo para ejemplo*/
   background-image: url(../assets/carta\ natal.jpg);
@@ -360,7 +360,7 @@ background: linear-gradient(
 }
  .card-bordes-der {
   height: 317px;
-    width: 261px;
+    width: 25%;
     border-radius: 40px;
   background-size: cover;/*sólo para ejemplo*/
   background-image: url(../assets/revo\ solar.jpg);
