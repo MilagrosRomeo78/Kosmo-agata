@@ -262,6 +262,82 @@ background: linear-gradient(
 .title .izq{
   margin-right: -66px;
 }*/
+.card-center img {
+  height: 400px;
+  width: 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.service .service-block {
+  display: block;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 24px 24px 10px rgb(24 25 27 / .01), 15px 15px 9px rgb(24 25 27 / .09), 9px 9px 7px rgb(24 25 27 / .3), 4px 4px 5px rgb(24 25 27 / .51), 1px 1px 3px rgb(24 25 27 / .59), 0 0 0 rgb(24 25 27 / .6);
+}
+
+.heading h2 {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 120%;
+  color: #F1DAB0;
+  margin-bottom: 8px;
+  letter-spacing: -.04em;
+  font-family: var(--font-ter);
+}
+
+.heading p {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 150%;
+  letter-spacing: .07em;
+  color: #FAFAFA;
+  margin-bottom: 50px;
+}
+
+.service .service-block.top-margin {
+    margin-top: -275px;
+}
+
+.service .service-block {
+    display: block;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 24px 24px 10px rgb(24 25 27 / .01), 15px 15px 9px rgb(24 25 27 / .09), 9px 9px 7px rgb(24 25 27 / .3), 4px 4px 5px rgb(24 25 27 / .51), 1px 1px 3px rgb(24 25 27 / .59), 0 0 0 rgb(24 25 27 / .6);
+}
+.info-cards {
+  overflow:hidden;
+ height: 317px;
+    width: 100%;
+    border-radius: 40px;
+  background-color: rgba(31, 1, 37, 0.534);
+  opacity:0;
+  transition: opacity 0.3s;
+  color: var(--text-main);
+}
+.position-abs{
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.aux:hover .info-cards {
+  opacity:1;
+}
+.aux:hover .title-cards {
+  margin-left: 10%;
+  transform: translate(-50%, 0);
+}
+
+.aux:hover .p-cards {
+  margin-top: 75px;
+   
+}
 /*============= SECTION servicios =============*/
 .contenedor-servicios{
   width:100%;
@@ -327,6 +403,7 @@ background: linear-gradient(
   background-image: url(../assets/carta\ natal.jpg);
   margin: 30px 0;
   position: relative ;
+  text-align: center;
 }
 
 .info-cards {
@@ -338,6 +415,10 @@ background: linear-gradient(
   opacity:0;
   transition: opacity 0.3s;
   color: var(--text-main);
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
 }
 
 .card-bordes-iz:hover .info-cards {
